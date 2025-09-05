@@ -1,0 +1,13 @@
+name: FastAPI Starter Template
+description: Production-ready FastAPI backend with CLI tools, environment config, PostgreSQL integration, and modular architecture
+labels:
+  - fastapi
+  - python
+  - backend
+  - api
+  - template
+  - cli-tools
+  - postgresql
+  - cors
+  - pydantic
+  - uvicorn
