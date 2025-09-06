@@ -10,7 +10,7 @@ install:
 
 # Run the FastAPI server
 dev:
-    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    uv run fastapi dev app/main.py --host 0.0.0.0 --port 8000
 
 # Create a new API route (interactive)
 create-route:
@@ -39,3 +39,8 @@ lint:
 clean:
     find . -type d -name "__pycache__" -exec rm -rf {} +
     find . -name "*.pyc" -delete
+
+
+# Create .env file
+setup-env:
+    @if [ -f .env ]; then echo ".env file already exists"; else cp .env.example .env && echo ".env file created from .env.example"; fi
